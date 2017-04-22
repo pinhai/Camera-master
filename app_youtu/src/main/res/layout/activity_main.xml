@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本地测试"
+        android:id="@+id/localTest"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL测试"
+        android:id="@+id/remoteTest"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/localTest"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/enterFaceIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="人脸核身进入"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bt_blue"
+        android:layout_below="@+id/remoteTest" />
+
+
+    <TextView
+        android:id="@+id/warning"
+        android:text="注意:使用之前请在Config.java文件里设置自己申请的 APP_ID, SECRET_ID, SECRET_KEY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
